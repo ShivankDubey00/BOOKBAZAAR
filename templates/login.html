@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Login - BookBazaar</title>
+
+<style>
+
+body{
+    background:#eef2ff;
+    font-family:Arial;
+}
+
+.box{
+    width:400px;
+    max-width:90%;
+    margin:100px auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 25px #ccc;
+}
+
+h1{
+    text-align:center;
+    color:#4f46e5;
+}
+
+input,button{
+    width:100%;
+    padding:13px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+button{
+    background:#4f46e5;
+    color:white;
+    border:0;
+    cursor:pointer;
+}
+
+a{
+    color:#4f46e5;
+    text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>📚 BookBazaar</h1>
+
+<h2>Login</h2>
+
+<form action="/login" method="POST">
+
+<input
+type="email"
+name="email"
+placeholder="Email"
+required
+>
+
+<input
+type="password"
+name="password"
+placeholder="Password"
+required
+>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+<p>
+Don't have an account?
+<a href="/register">Register</a>
+</p>
+
+<br>
+
+<a href="/">← Back to Home</a>
+
+</div>
+
+</body>
+
+</html>

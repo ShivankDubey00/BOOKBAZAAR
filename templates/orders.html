@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Orders - BookBazaar</title>
+
+<style>
+
+body{
+    background:#f5f7fb;
+    font-family:Arial;
+    margin:0;
+}
+
+nav{
+    background:white;
+    padding:18px 7%;
+    box-shadow:0 2px 10px #ddd;
+}
+
+nav a{
+    text-decoration:none;
+    color:#4f46e5;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+.order{
+    background:white;
+    padding:25px;
+    margin:15px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px #ddd;
+}
+
+.status{
+    color:#d97706;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="/">📚 BookBazaar</a>
+
+</nav>
+
+<div class="container">
+
+<h1>🛒 Orders</h1>
+
+{% for order in orders %}
+
+<div class="order">
+
+<h2>📚 {{ order["book_title"] }}</h2>
+
+<p>
+Price: ₹{{ order["price"] }}
+</p>
+
+<p>
+Buyer: {{ order["buyer_name"] }}
+</p>
+
+<p>
+Phone: {{ order["buyer_phone"] }}
+</p>
+
+<p>
+Order ID: #{{ order["id"] }}
+</p>
+
+<p class="status">
+Status: {{ order["status"] }}
+</p>
+
+</div>
+
+{% else %}
+
+<div class="order">
+
+<h2>No orders yet 📦</h2>
+
+<p>
+Abhi koi order nahi hai.
+</p>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+
+</html>

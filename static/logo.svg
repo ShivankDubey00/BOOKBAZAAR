@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160">
+  <rect width="500" height="160" rx="30" fill="#ffffff"/>
+  
+  <g transform="translate(35 25)">
+    <path d="M10 15 L65 5 L65 105 L10 95 Z"
+          fill="#4f46e5"/>
+    <path d="M65 5 L120 15 L120 95 L65 105 Z"
+          fill="#6366f1"/>
+    <path d="M65 5 L65 105"
+          stroke="#ffffff"
+          stroke-width="5"/>
+    
+    <circle cx="65" cy="5" r="8" fill="#f59e0b"/>
+  </g>
+
+  <text x="175" y="92"
+        font-family="Arial, sans-serif"
+        font-size="48"
+        font-weight="700"
+        fill="#111827">
+    BookBazaar
+  </text>
+</svg>
